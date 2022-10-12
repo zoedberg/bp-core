@@ -22,7 +22,7 @@ bitcoin = "0.28.1"
 secp256k1 = { version = "0.22.1", features = ["global-context", "rand-std"] }
 bitcoin_scripts = "0.8.0"
 descriptors = { version = "0.8.0", optional = true }
-psbt = { version = "0.8.4", default-features = false, optional = true }
+psbt = { git = "https://github.com/zoedberg/descriptor-wallet", branch = "fixes", version = "0.8.4", default-features = false, optional = true }
 strict_encoding = "0.8.1"
 commit_verify = { version = "0.8.0", features = ["rand"] }
 miniscript_crate = { package = "miniscript", version = "7.0.0", optional = true }
